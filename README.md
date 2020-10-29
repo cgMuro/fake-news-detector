@@ -6,7 +6,7 @@
 * I combined to different databases to avoid information leak and expose the models the different styles of writing 
 * I cleaned and processed the data
 * I used PassiveAggressive Classifier and Naive Bayes Classifier with the TF-IDF vectorizer, and Support Vector Machines and Neural Network with GloVe
-* I created a simple [Flask API](https://app-fake-news-detector.herokuapp.com/) inside Docker and deployed on Heroku that allows to make prediction with the model, and then built a [React application]() that connects with the API
+* I created a simple [Flask API](https://app-fake-news-detector.herokuapp.com/) inside Docker and deployed on Heroku that allows to make prediction with the model, and then built a [React application](https://cgmuro.github.io/fake-news-detector-app-frontend/) that connects with the API
 
 ---
 <br>
