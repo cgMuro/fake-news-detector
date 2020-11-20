@@ -6,7 +6,7 @@
 * I combined 2 different databases to avoid information leak and expose the models to different styles of writing 
 * I cleaned and processed the data
 * I used PassiveAggressive Classifier and Naive Bayes Classifier with the TF-IDF vectorizer, and Support Vector Machines and Neural Network with GloVe
-* I created a simple [Flask API](https://app-fake-news-detector.herokuapp.com/) inside Docker and deployed on Heroku that allows to make prediction with the model, and then built a [React application](https://cgmuro.github.io/fake-news-detector-app-frontend/) that connects with the API
+* I created a simple [Flask API](https://app-fake-news-detector.herokuapp.com/) inside Docker and deployed on Heroku that allows to make predictions with the model, and then built a [React application](https://cgmuro.github.io/fake-news-detector-app-frontend/) that connects with the API
 
 ---
 <br>
@@ -17,7 +17,7 @@ I used two different datasets from Kaggle:
 * https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 * https://www.kaggle.com/hassanamin/textdb3
 
-I decided to do so after reading this [kaggle notebook](https://www.kaggle.com/mosewintner/5-information-leaks-100-accuracy), in which it is explained all the information leaks that are present inside the first dataset, so to avoid the pattern inside that could be inside the way the news were written I decided to merge two different datasets.
+I decided to do so after reading this [Kaggle notebook](https://www.kaggle.com/mosewintner/5-information-leaks-100-accuracy), in which it is explained all the information leaks that are present inside the first dataset, so to avoid the pattern inside that could be inside the way the news were written I decided to merge two different datasets.
 
 ---
 <br>
