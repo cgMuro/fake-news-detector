@@ -8,7 +8,7 @@
 * I used PassiveAggressive Classifier and Naive Bayes Classifier with the TF-IDF vectorizer, and Support Vector Machines and Neural Network with GloVe
 * I created a simple [Flask API](https://app-fake-news-detector.herokuapp.com/) inside Docker and deployed on Heroku that allows to make predictions with the model, and then built a [React application](https://cgmuro.github.io/fake-news-detector-app-frontend/) that connects with the API
 
----
+
 <br>
 
 ## Data
@@ -19,7 +19,7 @@ I used two different datasets from Kaggle:
 
 I decided to do so after reading this [Kaggle notebook](https://www.kaggle.com/mosewintner/5-information-leaks-100-accuracy), in which it is explained all the information leaks that are present inside the first dataset, so to avoid the pattern inside that could be inside the way the news were written I decided to merge two different datasets.
 
----
+
 <br>
 
 ## Data Cleaning and Text Processing
@@ -27,7 +27,7 @@ I decided to do so after reading this [Kaggle notebook](https://www.kaggle.com/m
 I first cleaned the datasets from the information leaks and any other flaw.
 And then I did some text processing: removed URLs, tokenized, removed stopwords and punctuation.
 
----
+
 <br>
 
 ## Analysis and Visualization
@@ -43,29 +43,29 @@ For example, I analyzed the average lengths:
 
 Another analysis I did is the most common words:
 - Most common words in **fake news** texts:    
-        - <em>Trump:</em> 69587,   
-        - <em>said:</em> 26731,  
-        - <em>people:</em> 24615,  
-        - <em>would:</em> 22713,  
-        - <em>one:</em> 19713,  
-        - <em>Clinton:</em> 19026,  
-        - <em>Donald:</em> 16656,  
-        - <em>like:</em> 16436,  
-        - <em>“:</em> 15535,  
-        - <em>”:</em> 15167  
-- Most com<em>mon words in **true news** texts:
-        - <em>said:</em> 113046,    
-        - <em>“:</em> 72324,    
-        - <em>”:</em> 71807,    
-        - <em>Trump:</em> 67153,    
-        - <em>would:</em> 38388,    
-        - <em>U.S.:</em> 37863,    
-        - <em>also:</em> 20109,    
-        - <em>Clinton:</em> 19756,    
-        - <em>people:</em> 19714,    
-        - <em>Republican:</em> 19514  
+        - *Trump:* 69587,   
+        - *said:* 26731,  
+        - *people:* 24615,  
+        - *would:* 22713,  
+        - *one:* 19713,  
+        - *Clinton:* 19026,  
+        - *Donald:* 16656,  
+        - *like:* 16436,  
+        - *“:* 15535,  
+        - *”:* 15167  
+- Most common words in **true news** texts:
+        - *said:* 113046,    
+        - *“:* 72324,    
+        - *”:* 71807,    
+        - *Trump:* 67153,    
+        - *would:* 38388,    
+        - *U.S.:* 37863,    
+        - *also:* 20109,    
+        - *Clinton:* 19756,    
+        - *people:* 19714,    
+        - *Republican:* 19514  
 
----
+
 <br>
 
 ## Models
@@ -107,7 +107,7 @@ Loss: 0.46495574712753296
 
 It's saved in the folder called ```models``` under the name of ```nn.h5```.
 
----
+
 <br>
 
 ## Deployment
@@ -117,11 +117,11 @@ I used Docker to wrap the application and then deployed it to Heroku at the foll
 
 I then created a simple React application where you can paste the corpus of a news, and the application will communicate the result to the user. Here's the application: 
 
----
+
 
 ## Packages and Resources
 **Python Version:** 3.8     
-**Packages:** 
+**Packages**: 
 ```
 pip install pandas
 pip install numpy  
